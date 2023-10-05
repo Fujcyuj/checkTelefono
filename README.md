@@ -21,7 +21,7 @@ etc
 All'interno del file checkTelefono.cs c'è scritto il codice di controllo.
 
 I numeri vengono inviati come vettori a grippi di 3 quindi vengono suddivisi in sottovettori e elaborati singolarmente usando il comando seguente:
-─foreach( string input in inputStr )─
+foreach( string input in inputStr )
 dove la stringa input è il sottovettore del vettore inputStr.
 
 Per essere sicuri che il numero inizi con le cifre giuste viene eseguito un if dove di controllno i primi valori della stringa, per esempio:
