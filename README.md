@@ -22,7 +22,7 @@ All'interno del file checkTelefono.cs c'è scritto il codice di controllo.
 
 I numeri vengono inviati come vettori a grippi di 3 quindi vengono suddivisi in sottovettori e elaborati singolarmente usando il comando seguente:
 `foreach( string input in inputStr )`
-dove la stringa input è il sottovettore del vettore inputStr.
+dove la stringa `input` è il sottovettore del vettore `inputStr`.
 
 Per essere sicuri che il numero inizi con le cifre giuste viene eseguito un if dove di controllno i primi valori della stringa, per esempio:
 `if( input.StartsWith("0039") )`
@@ -34,8 +34,8 @@ Se la lunghezza è diversa la stringa verrà scartata e ricomincerà il ciclo.
 
 Invece se è corretta passerà alluntimo controllo che serve per determinare che allinterno ci siano solo numeri e non altro.
 `bool eUnNumero = Int64.TryParse( input, out valore );`
-Il valore bool eUnNumero controlla che il valore inserito sia effettivamente un numero.
-Viene usato Int64 perchè il valore è troppo grande e il classico Int lo riconoscerebbe come una stringa.
+Il valore `bool eUnNumero` controlla che il valore inserito sia effettivamente un numero.
+Viene usato `Int64` perchè il valore è troppo grande e il classico `Int` lo riconoscerebbe come una stringa.
 
 Alla fine se il  `if( eUnNumero )` è vero, il valore in input verrà mostrato. `return input;`
 Se anche un solo controllo risultasse falso ritornerà NULL: `return "";` Che viene inserito alla fine del codice.
